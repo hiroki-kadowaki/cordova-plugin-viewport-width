@@ -1,0 +1,34 @@
+{
+  "name": "cordova-plugin-viewport-width",
+  "version": "0.1.2",
+  "description": "Enable meta viewport width in Android Webview",
+  "cordova": {
+    "id": "cordova-plugin-viewport-width",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiroki-kadowaki/cordova-plugin-viewport-width.git"
+  },
+  "keywords": [
+    "cordova",
+    "webview",
+    "viewport",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova-android",
+      "version": ">=8"
+    }
+  ],
+  "author": "hiroki-kadowaki",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/hiroki-kadowaki/cordova-plugin-viewport-width/issues"
+  },
+  "homepage": "https://github.com/hiroki-kadowaki/cordova-plugin-viewport-width#readme"
+}

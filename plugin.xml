@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-viewport-width" version="0.1.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>viewport-width</name>
+    
+    <name>Crosswalk WebView Engine</name>
+    <description>Enable meta viewport width in Android Webview</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,webview,viewport</keywords>
+    <repo>https://github.com/hiroki-kadowaki/cordova-plugin-viewport-width</repo>
+    
+    <engines>
+        <engine name="cordova-android" version=">=7"/>
+    </engines>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ViewportWebViewEngine">
+                <param name="android-package" value="jp.kadowaki.cordova.engine.ViewportWebViewEngine" />
+            </feature>
+            <preference name="webView" value="jp.kadowaki.cordova.engine.ViewportWebViewEngine"/>
+            <preference name="android-minSdkVersion" value="19" />
+        </config-file>
+        <source-file src="src/android/ViewportWebViewEngine.java" target-dir="src/jp/kadowaki/cordova/engine"/>
+    </platform>
+</plugin>
