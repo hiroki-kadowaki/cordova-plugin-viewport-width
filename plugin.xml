@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.1' encoding='utf-8'?>
 <plugin id="cordova-plugin-viewport-width" version="0.1.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>viewport-width</name>
     
@@ -14,12 +14,12 @@
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="ViewportWebViewEngine">
-                <param name="android-package" value="jp.kadowaki.cordova.engine.ViewportWebViewEngine" />
-            </feature>
-            <preference name="webView" value="jp.kadowaki.cordova.engine.ViewportWebViewEngine"/>
+			<feature name="ViewportWidthPlugin">
+				<param name="android-package" value="jp.kadowaki.cordova.plugin.ViewportWidthPlugin" />
+                <param name="onload" value="true" />
+			</feature>
             <preference name="android-minSdkVersion" value="19" />
         </config-file>
-        <source-file src="src/android/ViewportWebViewEngine.java" target-dir="src/jp/kadowaki/cordova/engine"/>
+        <source-file src="src/android/ViewportWidthPlugin.java" target-dir="src/jp/kadowaki/cordova/plugin"/>
     </platform>
 </plugin>
